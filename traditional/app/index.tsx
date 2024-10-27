@@ -9,11 +9,11 @@ import { GestureHandlerRootView, PanGestureHandler } from 'react-native-gesture-
 
 export default function index() {
   const navigation = useNavigation<StackNavigationProp<ParamListBase>>();
-
+  const [language,setLanguage]=useState(null);
   const [currentTipIndex, setCurrentTipIndex] = useState(0);
   const [showTip, setShowTip] = useState(true);
 
-  const { language } = route.params; 
+  
 
   const tips = [
     {

@@ -11,16 +11,16 @@ export default function yaadhum() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Age Group</Text>
+      <Text style={styles.text}>Age</Text>
       <Button 
         mode="contained"
-        onPress={() => navigation.navigate('index');
+        
           onPress={() => {
-          
+            navigation.navigate('index')
           Speech.stop()
           Speech.speak("navigating into home page")
         }}
-        }
+        
         style={styles.button}
         labelStyle={styles.label}
       >
