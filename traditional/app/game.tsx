@@ -4,13 +4,21 @@ import { Button } from 'react-native-paper';
 
 export default function game() {
   return (
-    
+    <View>
+        <Text style={styles.text}>age group</Text>
     <Button mode="contained"
     onPress={()=>console.log('pressed')}
     style={styles.button}
     labelStyle={styles.label}>
-    Press me
-  </Button>
+    9-12
+    </Button>
+    <Button mode="contained"
+    onPress={()=>console.log('pressed')}
+    style={styles.button}
+    labelStyle={styles.label}>
+    13-19
+    </Button>
+</View>
   
   );
 }
@@ -28,5 +36,10 @@ const styles=StyleSheet.create({
     fontSize: 16, 
     fontWeight: 'bold', 
     color: '#ffffff',
+  },
+  text:{
+    color:'#000',
+     fontSize: 24, 
+    textAlign: 'center',
   }
 })
