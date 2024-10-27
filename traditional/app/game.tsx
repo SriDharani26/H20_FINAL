@@ -4,7 +4,7 @@ export default function game() {
   return (
     <View
       style={styles.container}>
-      <Text style={styles.text}>welcome</Text>
+      <Text style={styles.text}></Text>
     </View>
   );
 }
