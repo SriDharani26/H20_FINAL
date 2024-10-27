@@ -1,22 +1,32 @@
 import { Text, View, StyleSheet } from "react-native";
+import { Button } from 'react-native-paper';
+
 
 export default function game() {
   return (
-    <View
-      style={styles.container}>
-      <Text style={styles.text}></Text>
-    </View>
+    
+    <Button mode="contained"
+    onPress={()=>console.log('pressed')}
+    style={styles.button}
+    labelStyle={styles.label}>
+    Press me
+  </Button>
+  
   );
 }
 
 const styles=StyleSheet.create({
-  container:{
-    flex:1,
-    backgroundColor:'#25292e',
-    alignItems:'center',
-    justifyContent:'center',
+ button:{
+    
+    backgroundColor: '#6200ee',
+    borderRadius: 8, 
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    margin:10,
   },
-  text:{
-    color:'#fff',
+  label:{
+    fontSize: 16, 
+    fontWeight: 'bold', 
+    color: '#ffffff',
   }
 })
