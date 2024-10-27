@@ -2,7 +2,7 @@ import { Text, View, StyleSheet } from "react-native";
 import { Button } from 'react-native-paper';
 
 
-export default function game() {
+export default function Yaadhum() {
   return (
     <View>
         <Text style={styles.text}>age group</Text>
